@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+.food_box {
+	padding: 20px 200px;
+	width: 100%;
+	text-align: center;
+	background: #f1f2f3;
+}
+
+.food_inbox {
+	text-align: center;
+}
+/*사용자*/
+.admin_profile {
+	width: 100px;
+	height: 100px;
+	/*display: inline-block;*/
+	border: 1px solid;
+	overflow: hidden;
+	border-radius: 50%;
+	position: absolute;
+    top: 131%;
+    left: 47.2%;
+
+}
+.admin_id{
+	margin-top: 40px;
+    color: #5561d5;
+    font-size: 20px;
+}
+.admin_id:hover{
+	
+	font-weight: bold;
+}
+/*음식 사진  및 재료*/
+.fix {
+	display: inline-block;
+	background-color: #fff;
+	width: 1200px;
+	text-align: center;
+	padding-top: 50px;
+	border-bottom: 1px dashed #ccc;
+}
+
+.fix h2 {
+	font-size: 30px;
+	margin-top: 40px;
+}
+
+.food_img img{
+	margin: 0 auto;
+	width: 600px;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.ingredients_box {
+	display: inline-flex;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.ingredients_ul_info {
+	text-align: center;
+	display: inline-block;
+	width: 300px;
+	text-align: center;
+	margin: 0 100px;
+	
+}
+
+.ingredients_ul_info ul p  {
+
+	font-size: 20px;
+	text-align: center;
+}
+.ingredients_ul_info ul p  b{
+		color: #f36635;
+	}
+.ingredients_ul_info ul li {
+	border-bottom: 1px dotted #ddd;
+	margin: 10px;
+	font-size: 17px;
+}
+
+.ingredients_ul_info span {
+	float: right;
+	color: #adadad;
+}
+/*등록날짜*/
+.date{
+	text-align: center;
+	    display: inline-block;
+	    margin: 100px 0 10px 0;
+
+}
+.view_notice{
+	background: #f9f9f9;
+    border: 1px dashed #ccc;
+    padding: 15px;
+    display: inline-block;
+}
+
+.view_notice_date{
+    line-height: 1;
+    color: #999;
+    font-size: 13px;
+}
+.view_notice_date b{
+	font-weight: normal;
+    padding: 0 12px;
+}
+
+
+
+/*조리 순서*/
+.cooking_order {
+	display: inline-block;
+    background-color: #fff;
+	text-align:left;
+    padding: 50px;
+    width: 1200px;
+    line-height: 30px;
+	
+}
+
+
+.cooking_order h3 {
+	text-align: center;
+	margin-bottom:50px; 
+}
+
+.cooking_order ol {
+	padding: 40px;
+}
+
+.cooking_order h3 {
+	color: #6a67a9;
+	font-size: 30px;
+	font-weight: 2px;
+}
+
+.step {
+	width: 100%;
+	height: 200px;
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 2px;
+}
+
+.step span {
+	color: #FFFFFF;
+	background-color: rgb(96 109 158/ 70%);
+	display: inline-block;
+	top: 0;
+	left: 0;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 50%;
+	text-align: center;
+}
+.step_inbox{
+	display: inline-flex;
+}
+.step_inbox > p{
+ 	display: inline-block;
+    width: 1000px;
+    margin-left: 10px;
+}
+	
+	
+	
+/*후기*/
+.reply_box{
+    width: 1200px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 20px auto;
+    padding: 40px
+}
+.reply_title{
+	display: inline-block;
+}
+.reply_title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e6e7e8;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+}
+.commendListCount{
+	color: #74b243;
+    font-weight: normal;
+}
+.media_reply_list{
+	border-bottom: 1px solid #e6e7e8;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    text-align: left;
+    margin-top: 20px;
+    
+    
+}
+.media_left{
+	display: inline-block;
+	margin-right: 15px;
+	
+}
+.media_object{
+	width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:1px solid;
+}
+
+.media_body{
+    display: inline-block;
+	
+}
+.media_heading{
+	color: #999;
+    font-size: 14px;
+    display:block;
+    vertical-align: top;
+
+}
+.media_name{
+	font-size: 17px;
+    margin-right: 10px;
+    font-weight: normal;
+    color: #de4830
+}
+
+/*댓글사진*/
+.reply_list_img{
+	withd:60px; height:60px; float:right;
+}
+.reply_list_img:hover{
+	cursor: pointer;
+}
+/*댓글등록*/
+.reply_btn{
+	display: inline-block;
+    font-size: 15px;
+    padding: 5px;
+    float: right;
+}
+.reply_btn:hover{
+	color:red;
+}
+.reply_list_cont{
+	width:1092px;
+}
+/*댓글 작성폼*/
+.reply_write{
+	margin-top: 80px;
+}
+.add_img{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+.add_img img{
+	border: 1px solid #e1e1e1;
+}
+
+.input-group {
+   display: inline-block;
+       text-align: left;
+   
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    width: 1%;
+    vertical-align: top;
+}
+.cmt_tx_content1{
+	height:100px; width:680px; resize:none;	border: 1px solid #e1e1e1;
+	
+}
+.btn-default{
+		height:100px; width:100px;	border: 1px solid #e1e1e1;
+		cursor: pointer;
+}
+button:hover{
+	background: #d3d3d3;
+}
+.reply_text{
+	resize: none;
+    border: 1px solid #e1e1e1;
+   height: 30px;
+    font-size: 16px;
+    width: 500px;
+    overflow: scroll;
+    display: inline-block;
+	
+}
+.rp_btn{
+	margin: 0 7px 0 910px;
+}
+.reply_btn2{
+    margin-right: 10px;
+}

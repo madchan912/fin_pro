@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/*카테고리 상단*/
+.category_box {
+	width: 100%;
+	text-align: center;
+	margin-top: 200px;
+}
+
+.cate_list{
+	font-size: 20px;
+}
+.cate_list tr th span{
+	color:#fff;
+	display: block;
+}
+.cate_list tr td {
+	width:500px;
+}

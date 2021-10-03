@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#text{ display :none;}/*더 보기*/
+#up-on-scroll { /*스크롤시 나타내기*/
+  
+    transition: transform 0.7s, opacity 1s;
+}
+.container {
+	margin: 0 auto;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	
+}
+
+header, section, article, aside, nav, main, footer {
+	display: block;
+}
+
+header:after, section:after, article:after, aside:after, nav:after, main:after,
+	footer:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+ul,ol  {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+
+
+/*본문*/
+body{
+	background-color: #ececec;
+}
+/*추천 레시피 제목*/
+.recommend_title{
+	display: inline-block;
+	text-align: center;
+	width:100%;
+	margin:50px 0;
+}
+.recommend_title p{
+	color: #808080;
+}
+.recommend_title h2 span{
+	color: #008080;
+	font-weight: 2px;
+}
+/*추천레시피 목록*/
+
+.main_con_box {
+	padding:0 200px;
+	
+}
+
+.main_con_inbox {
+	margin: 0 auto;
+	text-align: center;
+}
+.recipy_box{
+	display: inline-block;
+	width:600px;
+	height:260px;
+	margin: 4px auto;
+	
+}
+.recipy{
+	background-color: #fff;
+	width:580px;
+	height: 240px;
+	text-align: center;
+	margin: 0 auto;
+	text-align: right;
+}
+.recipy_img{
+	width:260px;
+	height:240px;
+	float:left;
+	
+}
+
+.recipy_info{
+	display: inline-block;
+	width:50%;
+	text-align: left;
+	padding: 50px 60px 0 0;
+	height:24px;
+	
+}
+.recipy_name_h3  {
+	display: inline-block;
+	font-size: 25px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 240px;
+	height: 33px;
+	}
+.recipy_name_h3 a{
+	color: black;
+	font-weight: 2px;
+	
+}
+
+.recipy_name {
+  
+    margin-bottom: 50px;
+}
+.admin_img{
+	overflow: hidden;
+	border:1px solid;
+	border-radius: 50px;
+}
+.admin_img img{
+	width:20px;
+	height:20px;
+}
+.admin p{
+    display: inline-block;
+    color: #5561d5;
+}
+
+.number_view{
+	margin-top:px;
+}
+/*더보기 버튼*/
+#btn-container{
+	margin: 10px;
+}
+.toggle{
+	width:100px;
+	height:50px;
+	cursor: pointer;
+	border:3px solid #908dbe;
+	color:#908dbe;
+}
+.toggle:hover{
+	border:3px solid #f36635;
+	color: #f36635;
+}
+
+/*하단*/
+footer{
+	width:100%; 
+	border-top: 1px solid #ddd;
+    margin-top: 40px;
+    font-family:sans-serif;
+  
+ }
+ footer div.container{
+ background-color: #fff;
+ }
+.footer {
+	width: 100%;
+    height: 90px;
+    text-align: center;
+    
+}
+.footer span, .footer p{
+	line-height: 30px;
+	color: #b0b0b0;
+}
+
+
+.f_img{
+    text-align: center;
+    margin-top: 10px;
+   
+}
+.footer_con_box{
+	padding: 10px;
+}
+#btn-container{
+	text-align: center;
+}

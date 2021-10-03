@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="Member">
+ 
+ <!-- 이메일 중복체크 -->
+ <select id="m_check" resultType="m">
+   select * from member where mail_id=#{mail_id}
+ </select>
+ 
+  <!-- 닉네임 중복체크 -->
+ <select id="n_check" resultType="m">
+   select * from member where mem_nic=#{mem_nic}
+ </select>
+ 
+ <!-- 회원저장 -->
+ <insert id="m_in">
+   insert into member(mem_pwd,mem_name,mem_phone,
+ mail_id,mem_nic,mem_date,mem_state) values 
+ (#{mem_pwd},#{mem_name},#{mem_phone},
+ #{mail_id},#{mem_nic},sysdate,1)
+ </insert>
+ 
+ <!-- 로그인 인증 -->
+ <select id="login_ck" resultType="m">
+ select * from member where mail_id=#{login_id} and mem_state=1 
+ </select>
+ 
+ <!-- 메일아이디에 해당하는 회원정보를 수정폼으로 전달 -->
+ <select id="m_edit" resultType="m">
+    select * from member where mail_id=#{mail_id}
+ </select>
+ 
+ <!-- 정보수정완료 -->
+ <update id="m_edit_ok">
+    update member set mem_pwd=#{mem_pwd},mem_name=#{mem_name},
+   mem_phone=#{mem_phone},mem_nic=#{mem_nic} where mail_id=#{mail_id}
+ </update>
+ 
+ <!-- 회원탈퇴 -->
+ <delete id="m_del">
+ update member set mem_delcont=#{mem_delcont}, mem_deldate=sysdate , mem_state=2 where mail_id=#{mail_id}
+ </delete>
+ 
+ <!--닉네임 기준으로 회원정보 구함 (마이페이지) -->
+ <select id="m_id" resultType="m">
+    select * from member where mem_nic=#{mem_nic}
+ </select>
+ 
+ <!-- 메일과 이름 기준으로 회원검색 -->
+ <select id="ped_m" resultType="m">
+   select * from member where mail_id=#{mail_id} and mem_name=#{mem_name}
+ </select>
+ 
+ <!-- 임시비번 수정 -->
+ <update id="p_edit">
+   update member set mem_pwd=#{mem_pwd} where mail_id=#{mail_id} 
+ </update>
+ 
+ <!-- 회원 총갯수 -->
+ <select id="m_count" resultType="int">
+    select count(*) from member
+ </select>
+ 
+
+ 
+ </mapper>

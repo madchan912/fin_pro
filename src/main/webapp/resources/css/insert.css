@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+/* recipe css */
+
+.recipe_reg1{
+	width: 1200px;
+	max-width: none;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 20px;
+	
+}
+
+.reg_center{	
+	box-sizing: border-box;
+	margin: 20px;
+	padding: 10px;
+	background: #f1f3f5;
+}
+
+#reg_title{
+	background: gray;
+	padding: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.main_box{
+	padding: 25px 30px;
+    border-bottom: 10px solid gray;    
+}
+
+.main_box p{
+	line-height: 30px;
+	vertical-align: top;
+	margin-right: 80px;
+}
+
+
+#cont_title{
+	width: 1200px;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+
+.cont_tit1{
+	width: 150px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 20px 0;
+}
+
+#cok_title{
+	width: 600px;
+	height: 50px;
+	font-size: 15px;
+}
+
+#cont_intro{
+	
+	box-sizing: border-box;
+	
+}
+
+.cont_tit2{
+	width: 150px;
+	display: inline-block;	
+	line-height: 30px;
+}
+
+#cok_intro{
+	width: 600px;
+	height: 250px;
+	display: inline-block;
+	font-size: 15px;
+}
+
+.cont_line{
+	padding: 10px 0 0 360px;
+	width: 1200px;
+	box-sizing: border-box;
+}
+
+.cont_tit3{
+	width: 133px;
+	display: inline-block;	
+	margin: 0 0 20px 0;		
+}
+
+#cok_category1,#cok_category2,#cok_category3,#cok_category4{
+	padding: 10px 3px;
+	border-radius: 5px;
+	font-size: 15px;
+	margin: 0 5px;
+}
+
+
+
+.material_box{
+	padding: 30px 0 0 30px;
+	text-align: left;
+}
+
+.cont_tit4{
+	width: 150px;
+	display: inline-block;
+	margin-top: 10px;
+	vertical-align: top;
+	padding-top: 8px;	
+	margin-right:80px; 
+	
+}
+
+#material_area{
+	display: inline-block;
+	list-style: none;
+}
+
+#material_area li{
+	margin-bottom: 5px;
+}
+
+.material input{
+	height: 50px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	margin: 3px 80px 3px 3px;	
+}
+
+#btn_add1{
+	text-align: center;
+	border-bottom: 10px solid gray;
+}
+
+
+
+.recipe_order{
+	text-align:center;
+}
+
+.cont_tit5{
+	width: 150px;
+	display: inline-block;	
+	margin: 0 0 20px 0;
+	line-height: 30px;
+	vertical-align: top;
+	padding-top: 8px;	
+}
+
+#order_area{
+	padding-left: 50px;
+	padding: 26px 30px;
+	border-bottom: 1px dotted gray;
+    height: 250px;
+    text-align: center;
+   
+	}
+#step1_tit{
+	width: 20%;
+	float:left
+}
+.step1{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 20px 0;
+	line-height: 30px;
+	
+}
+#step1{text-align: left;
+}
+#step1_text{
+	display: inline-block;
+	width: 60%;
+	float:left
+}
+.oder_1{
+	width: 600px;
+	height: 200px;
+	display: inline-block;
+	font-size: 15px;
+	vertical-align: middle;
+}
+
+
+#btn_add_1{
+	margin: 20px 0 30px 0;
+	padding: 5px 15px;
+	
+}
+
+#btn_add_2{
+	margin: 20px 0 0 0;
+	padding: 5px;
+}
+
+.reg_btn{
+	text-align:center;
+	padding: 20px 0 20px 0;
+}
+
+#btn_sc{
+	padding:10px 40px;
+	margin:0 10px 0 0;
+}
+.r_file {
+    padding: 30px;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+}
+.clear{
+	clear: both;
+}

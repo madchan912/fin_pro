@@ -1,0 +1,335 @@
+
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  box-sizing: border-box;
+}
+
+/* js css */
+.find_field {
+	background-color: #a9a9a900;
+	color: #fff;
+	height: 40px;
+	border: 0px;
+	width: 68px;
+}
+.material{
+  margin:auto;
+  padding:auto;
+  color:white;
+  text-align: center;
+}
+
+.material-icons{
+  color:#fff;
+  font-size: 10rem;
+}
+.lg-text{
+  color:#fff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+#dynamic{
+  position: relative;
+  display: inline-block;
+}
+
+#dynamic::after{
+  content:"";
+  display: block;
+  position: absolute;
+  top:0;
+  right:-10px;
+  width: 4px;
+  height: 100%;
+  background-color: white;
+}
+
+#dynamic.active::after{
+  display:none;
+}
+/* js css */
+
+h1{
+  font-size: 48px;
+  font-weight: lighter;
+} 
+.nav>li>a:hover{
+	font-weight: bold;
+}
+.logout a{
+	display: inline-block;
+	color: #fff;
+	width:73px;
+	margin:30px 0 0 0;
+	font-size: 17px; 	
+	
+}
+.logout a:hover{
+	color:red;
+}
+.my_page a{
+	display: inline-block;
+	color: #fff;
+	width:110px;
+	margin-top:30px;
+	font-size: 17px; 
+}
+.contents1{
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.contents3{
+  font-size: 14px;
+  font-weight: 100;
+}
+.contents1_bold{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.result{
+  font-size: 24px;
+}
+
+.intro_bg{
+  width:100%;
+  height:120px;
+  background:linear-gradient( rgb(27 26 26 / 50%), rgb(25 25 25 / 52%) ), url("../image/visual.jpg")
+	;
+  background-size: cover;
+}
+
+.header{
+  display: flex;
+  width:1280px;
+  margin:auto;
+  height: 86px;
+}
+
+.searchArea{
+  width: 300px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-top: 24px;
+}
+
+.search_input{
+  border:none;
+  width:175px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0);
+  color:#fff;
+  padding-left: 10px;
+}
+
+.search_sm{
+  width: 46px;
+  color:#8e8484;
+  font-weight: bold;
+  cursor: pointer;
+  height: 32px;
+ 
+}
+
+.nav{
+  display: flex;
+  line-height: 86px;
+  margin-right:150px;
+  color:#fff;
+}
+
+.nav > li{
+  margin-left: 84px;
+}
+
+.nav > li > a{
+  color:#fff;
+}
+
+
+
+.amount{
+  position: relative;
+  top:-66px;
+  display: flex;
+  width: 1280px;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.amount > li{
+  flex: 1;
+  height: 132px;
+}
+
+.amount > li > div{
+  text-align: center;
+  height: 57px;
+  margin-top: 37px;
+}
+
+.amount > li:not(:last-child) > div{
+  border-right: 1px solid #E1E1E1;
+}
+.intro_text{
+  width: 100%;
+  margin: 50px auto 231px auto;
+  text-align: center;
+}
+
+.intro_text > h1,
+.intro_text > h4{
+  color:#fff;
+}
+
+#nav_menu ul{
+	list-style-type:none;
+	text-align:center;
+	background-color: #fff;
+}
+
+#nav_menu ul li{
+	display:inline;
+	margin: 0 10px 0 10px;
+	padding: 0px 10px 0px 10px;
+}
+
+#nav_menu ul li:first-child {
+	border-left: none;
+}
+
+#nav_menu a {
+ text-decoration:none;
+ color:black;
+ font-family: 'Jua', sans-serif;
+
+}
+
+#nav_menu a:hover {
+ color:#ff0000;
+ border-bottom:3px solid red;
+}
+
+
+
+
+#nav_main{
+  width: 100%;
+  height: 700px;
+  background-color: #efefef;
+}
+
+
+.result_none img {
+	margin: auto;
+	display: block;
+}
+
+.result_none h2{
+	text-align: center;
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+
+.recipe_btn {
+	border: none;
+	color: #fff;
+	background: #f14b11;
+    font-size: 20px;
+    line-height: 10px;
+    font-weight: 600;
+    padding: 18px 30px 17px ;
+    margin:20px 0;
+    border-radius: 10px;
+	}
+	
+.recipe_btn:hover{
+	cursor:pointer;
+} 
+
+
+/* main_text2 start*/
+.main_text2{
+  width: 100%;
+  height: 418px;
+  background-image: url("../image/contact.png")
+}
+
+.main_text2 > ul{
+  display: flex;
+  padding-top: 138px;
+}
+
+.main_text2 > ul > li{
+  flex: 1;
+  text-align: center;
+}
+
+.main_text2 > ul > li > div > h1,
+.main_text2 > ul > li > div {
+  color: #fff;
+}
+
+.more2{
+  width: 220px;
+  height: 40px;
+  border: 1px solid white;
+  line-height: 40px;
+  margin: 16px auto;
+}
+
+footer{
+  display: flex;
+  background: #1f1f1f;
+  padding:30px;
+}
+
+footer > div:first-child{
+  flex: 3;
+  text-align: center;
+  color: #fff;
+}
+
+footer > div:last-child{
+  flex: 9;
+  color: #fff;
+}
+.my_recipy{
+	margin:40px;
+}
+#myList_t{
+	margin: 0 auto;
+}
+.recipy_in_btn{
+	margin-top:30px; 
+}
+.my_tr{
+	border-bottom: 1px dotted gray;
+}
+.recipy_in_box{
+	background-color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+.login a {
+	display: inline-block;
+	color: #fff;
+	width: 73px;
+	margin: 30px 10px 0 0;
+	font-size: 17px;
+}
+
+.login a:hover {
+	color: red;
+}

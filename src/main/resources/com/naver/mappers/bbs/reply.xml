@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Reply">
+	<!-- 댓글 저장 -->
+	<insert id="rp_in">
+		insert into reply (rno,recipy_no,replyer,mail_id,replytext,regdate)
+		values (rno_seq.nextval,#{recipy_no},#{replyer},#{mail_id},#{replytext},sysdate)
+	</insert>
+
+	<!-- 댓글 리스트 -->
+	<select id="rp_li" resultType="rp">
+		select rno,recipy_no,replyer,mail_id,replytext,regdate,updatedate from reply where recipy_no=#{recipy_no} order by regdate desc
+		
+    </select>
+
+
+
+	<!-- 댓글 총갯수 -->
+	<select id="rp_count" resultType="int">
+		select count(*) from reply where recipy_no=#{recipy_no}
+	</select>
+	
+	<!-- 댓글 수정 -->
+	<update id="rp_edit">
+	   update reply set replytext=#{replytext} where rno=#{rno}
+	</update>
+	
+	<!-- 댓글 삭제 -->
+	<delete id="rp_del">
+	   delete from reply where rno = #{rno}
+	</delete>
+</mapper>
