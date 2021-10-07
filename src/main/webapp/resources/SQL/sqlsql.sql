@@ -39,7 +39,6 @@ mail_id varchar2(30) primary key--메일 아이디
  ,mem_state number(38) --가입회원이면 1, 탈퇴회원은 2
  ,mem_delcont varchar2(4000) --탈퇴사유
  ,mem_deldate date --탈퇴날짜
-
  );
  
  drop table member;
@@ -56,7 +55,7 @@ create table reply(
  ,updatedate date --댓글 수정날짜
 );
 
-drop table VISIT;
+drop table reply;
 select * from reply order by rno desc;
 
 --외래키 설정 작업
