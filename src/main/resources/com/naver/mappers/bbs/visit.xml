@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="Visit">
+ 
+<insert id="v_in">
+	INSERT INTO VISIT (V_DATE) VALUES (sysdate)
+</insert>
+
+<select id="v_sel" resultType="int">
+	SELECT COUNT(*) FROM VISIT
+</select>
+ 
+ </mapper>

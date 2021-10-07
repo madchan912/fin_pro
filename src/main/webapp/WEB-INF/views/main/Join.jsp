@@ -10,7 +10,7 @@
 <script src="./resources/js/member.js"></script>
 
 <link href="./resources/image/favicon.png" rel="shortcut icon" type="image/x-icon">
-<link href="./resources/css/Join.css" rel="stylesheet" type="text/css">
+<link href="./resources/css/Login.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500"	rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 

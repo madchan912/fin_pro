@@ -11,7 +11,7 @@
 <script src="./resources/js/member.js"></script>
 
 <link href="./resources/image/favicon.png" rel="shortcut icon" type="image/x-icon">
-<link href="./resources/css/Join.css" rel="stylesheet" type="text/css">
+<link href="./resources/css/Login.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500"	rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 <script src="./resources/js/member.js"></script>
@@ -26,7 +26,7 @@
 
 					<!-- 로고 -->
 					<a href="main2"><img src="./resources/image/logo0.png" alt="로고이미지"
-						style="width: 100%; height: 100%; display: inline-block;"> </a>
+						style="width: 60%; height: 100%; display: inline-block;"> </a>
 
 					<form method="POST" action="member_edit_ok" class="onboarding-form"  onsubmit="return join_check2();">
 						<h2 class="onboarding-headline">정보수정</h2>

@@ -22,7 +22,7 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.naver.controller" />
-	
+	<context:component-scan base-package="com.naver.service" />
 	
 	
 </beans:beans>

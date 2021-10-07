@@ -40,7 +40,7 @@
 
 					<!-- 로고 -->
 					<a href="main2"><img src="./resources/image/logo0.png" alt="로고이미지"
-						style="width: 100%; height: 100%; display: inline-block;"> </a>
+						style="width: 60%; height: 100%; display: inline-block;"> </a>
 
 					<!-- 로그인버튼 -->
 					<form method="POST" action="pwd_find_ok" class="onboarding-form" onsubmit="return login_check();">

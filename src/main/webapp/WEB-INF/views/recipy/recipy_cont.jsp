@@ -175,6 +175,7 @@
 
 
 			<!-- 댓글 달기 -->
+			<c:if test="${!empty sessionScope.id}">
 			<div class="reply_write">
 				<!--댓글 입력창-->
 				<div class="input-group" style="width: 800px;">
@@ -186,6 +187,7 @@
 				</div>
 
 			</div>
+			</c:if>
 
 		</div>
 

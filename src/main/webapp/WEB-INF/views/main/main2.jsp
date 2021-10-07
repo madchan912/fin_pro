@@ -46,11 +46,11 @@
 					<li><a href="#link_main_text2">CONTACT</a></li>
 				</ul>
 				
-				<c:if test="${empty sessionScope}">
+				<c:if test="${empty sessionScope.id}">
 					<div class="login"><a href="Login">로그인</a></div>
 					</c:if>
 					
-					<c:if test="${!empty sessionScope}">
+					<c:if test="${!empty sessionScope.id}">
 					<div class="my_page">
 						<a href="mypage?recipy_name=${m.mem_nic}">마이페이지</a> 
 					</div>
@@ -88,7 +88,7 @@
 			</li>
 			<li>
 				<div>
-					<div class="contents1">방문자수</div>
+					<div class="contents1">총 방문자수</div>
 					<div class="result"><%=session.getAttribute("totalCount") %></div>
 				</div>
 			</li>
@@ -148,7 +148,7 @@
 		<!--main_text1 시작 -->
 		<div class="main_text1" id="link_main_text1" >
 			<h1>SERVICE</h1>
-			<div class="contents1">엄격ㄱ한 유통과정으로 미식가들ㅇ에게</div>
+			<div class="contents1">엄격한 유통과정으로 미식가들에게</div>
 			<div class="service">
 				<div class="food_photo">
 					<img src="./resources/image/food.png">

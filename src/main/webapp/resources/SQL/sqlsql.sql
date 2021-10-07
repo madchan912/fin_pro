@@ -79,6 +79,7 @@ CREATE TABLE VISIT (
 v_date date
 );
 
+select * from visit
 
 
 

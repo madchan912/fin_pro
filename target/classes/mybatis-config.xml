@@ -6,9 +6,9 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 
 <configuration>
 	<typeAliases>
-	
 		<typeAlias type="com.naver.vo.MemberVO" alias="m" />
 		<typeAlias type="com.naver.vo.RecipyVO" alias="r" />
 		<typeAlias type="com.naver.vo.ReplyVO" alias="rp" />
+		<typeAlias type="com.naver.vo.VisitVO" alias="v" />
 	</typeAliases>
 </configuration>   
