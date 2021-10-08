@@ -142,7 +142,7 @@ public class HomeController {
 		// 총회원수
 		int memberCount = this.memberService.memberCount();
 		// 총 방문자수
-		// int 퍄
+		// int
 		String id = (String) session.getAttribute("id"); // 세션 아이디 저장할때 키이름
 
 		if (id != null) {
